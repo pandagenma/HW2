@@ -51,7 +51,7 @@ HW2
 	    E A E E I H L L N O O R S Q S S S T T Y U
                         
 					       * *
-                        			       E A E E I H L L N O O R S Q S S S T T Y U
+                        		       E A E E I H L L N O O R S Q S S S T T Y U
 		      			     A E E E I H L L N O O R S Q S S S T T Y U
 		    			   A E E E I H L L N O O R S Q S S S T T Y U
 		                         A E E E I H L L N O O R S Q S S S T T Y U
@@ -90,4 +90,35 @@ HW2
         }
 
 2.2.17)
-	element* linksort(element *head, int length) {   	   int i = (length/2), j = (length-i); 	   element *iNext, *jNext, *iTail, *jTail, *tail;	   if (length <= 1) 	      return head -> next;	   iTail = linksort(head, i);	   jTail = linksort(iTail, j);	   tail = head;	   iNext = head -> next; 	   jNext = iTail -> next;  	   iTail -> next = jTail -> next;  	   while (1) {    	      if (cmp(iNext,jNext) <= 0) {      	         tail -> next = iNext;	         tail = iNext;     	         if (—-i == 0) {	            tail -> next = jNext; 	            return jTail; 	         }      	         iNext = iNext -> next;    	      }               else {      	         tail -> next = jNext;	         tail = jNext;      	         if (-—j == 0) { 	            tail -> next = iNext;	            return iTail;	         }      	         jNext = jNext -> next;    	      }  	   }	}
+	element* linksort(element *head, int length) { 
+  	   int i = (length/2), j = (length-i);
+ 	   element *iNext, *jNext, *iTail, *jTail, *tail;
+	   if (length <= 1) 
+	      return head -> next;
+	   iTail = linksort(head, i);
+	   jTail = linksort(iTail, j);
+	   tail = head;
+	   iNext = head -> next;
+ 	   jNext = iTail -> next;
+  	   iTail -> next = jTail -> next;
+  	   while (1) {
+    	      if (cmp(iNext,jNext) <= 0) {
+      	         tail -> next = iNext;
+	         tail = iNext;
+     	         if (—-i == 0) {
+	            tail -> next = jNext; 
+	            return jTail; 
+	         }
+      	         iNext = iNext -> next;
+    	      } 
+              else {
+      	         tail -> next = jNext;
+	         tail = jNext;
+      	         if (-—j == 0) { 
+	            tail -> next = iNext;
+	            return iTail;
+	         }
+      	         jNext = jNext -> next;
+    	      }
+  	   }
+	}
