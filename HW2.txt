@@ -1,0 +1,93 @@
+Cara Holmes
+HW2
+09/28/2016
+
+2.1.1)
+	E A S Y Q U E S T I O N
+	A E S Y Q U E S T I O N
+	A E E Y Q U S S T I O N 
+	A E E I Q U S S T Y O N
+	A E E I N U S S T Y O Q
+	A E E I N O S S T Y U Q 
+	A E E I N O Q S T Y U S
+	A E E I N O Q S T Y U S
+	A E E I N O Q S S Y U T
+	A E E I N O Q S S T U Y
+	A E E I N O Q S S Y U T
+	A E E I N O Q S S T U Y
+
+2.1.5)
+	1 9 8 7 6 5 4 3 2
+2.1.9)
+						*               *               *
+						0                   1                   2
+						0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+	
+						E A S Y S H E L L S O R I Q U E S T I O N
+                                              E A S Y S H E L L S O R T Q U E S T I O N
+					    E A I Y S H E L L S O R T Q U E S T S O N
+					  E A I O S H E L L S O R T Q U E S T S Y N
+					E A I O N H E L L S O R S Q U E S T S Y T
+			  	
+            *   *   *   *   *   *   *   *   *   *   *
+						E A I O N H E L L S O R S Q U E S T S Y T
+		                              E A I O N H E L L S O R S Q U E S T S Y T	
+                                            E A I O N H E L L S O R S Q U E S T S Y T
+					  E A I H N O E L L S O R S Q U E S T S Y T
+					E A E H I O N L L S O R S Q U E S T S Y T
+				      E A E H I L N O L S O R S Q U E S T S Y T
+				    E A E H I L L O N S O R S Q U E S T S Y T
+				  E A E H I L L O N S O R S Q U E S T S Y T
+				E A E H I L L O N S O R S Q U E S T S Y T
+			      E A E H I L L O N R O S S Q U E S T S Y T
+			    E A E H I L L O N R O S S Q U E S T S Y T
+			  E A E H I L L O N R O Q S S U E S T S Y T
+			E A E H I L L O N R O Q S S U E S T S Y T
+		      E A E E I H L L N O O R S Q U S S T S Y T
+		    E A E E I H L L N O O R S Q S S U T S Y T
+		  E A E E I H L L N O O R S Q S S U T S Y T
+		E A E E I H L L N O O R S Q S S S T U Y T
+	      E A E E I H L L N O O R S Q S S S T U Y T
+	    E A E E I H L L N O O R S Q S S S T T Y U
+                        
+					       * *
+                        			       E A E E I H L L N O O R S Q S S S T T Y U
+		      			     A E E E I H L L N O O R S Q S S S T T Y U
+		    			   A E E E I H L L N O O R S Q S S S T T Y U
+		                         A E E E I H L L N O O R S Q S S S T T Y U
+		                       A E E I H L L N O O R S Q S S S T T Y U
+	                             A E E I H L L N O O R S Q S S S T T Y U
+ 	                           A E E I H L L N O O R S Q S S S T T Y U
+	                         A E E I H L L N O O R S Q S S S T T Y U
+	                       A E E I H L L N O O R S Q S S S T T Y U
+			     A E E I H L L N O O R S Q S S S T T Y U
+			   A E E I H L L N O O R S Q S S S T T Y U
+			 A E E I H L L N O O Q R S S S S T T Y U
+		       A E E I H L L N O O Q R S S S S T T Y U
+		     A E E I H L L N O O Q R S S S S T T Y U
+		   A E E I H L L N O O Q R S S S S T T Y U
+                 A E E I H L L N O O Q R S S S S T T Y U
+               A E E I H L L N O O Q R S S S S T T Y U
+             A E E I H L L N O O Q R S S S S T T Y U
+           A E E I H L L N O O Q R S S S S T T U Y
+
+2.1.12)
+	public class Shellprint {
+	   public static void sort(Comparable[] a) {
+              int n = a.length;
+	      int h = 1;
+	      int xcount = 0;
+	      while (h < N/3) h = 3*h + 1;
+	      while (h >= 1) {
+                 for (int i = h; i < N; i++) {
+		    for (int j = i; j >= h && less(a[j], a[j-h]; j -= h) {
+		       exch(a, j , j-h);
+		       xcount++;
+		 }
+	      }
+	      System.out.println(xcount / N);
+           }
+        }
+
+2.2.17)
+	element* linksort(element *head, int length) {   	   int i = (length/2), j = (length-i); 	   element *iNext, *jNext, *iTail, *jTail, *tail;	   if (length <= 1) 	      return head -> next;	   iTail = linksort(head, i);	   jTail = linksort(iTail, j);	   tail = head;	   iNext = head -> next; 	   jNext = iTail -> next;  	   iTail -> next = jTail -> next;  	   while (1) {    	      if (cmp(iNext,jNext) <= 0) {      	         tail -> next = iNext;	         tail = iNext;     	         if (—-i == 0) {	            tail -> next = jNext; 	            return jTail; 	         }      	         iNext = iNext -> next;    	      }               else {      	         tail -> next = jNext;	         tail = jNext;      	         if (-—j == 0) { 	            tail -> next = iNext;	            return iTail;	         }      	         jNext = jNext -> next;    	      }  	   }	}
